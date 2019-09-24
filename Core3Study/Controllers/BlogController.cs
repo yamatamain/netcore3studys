@@ -47,6 +47,7 @@ namespace Core3Study.Controllers
         [Route("get")]
         public async Task<string> Get(string key = "test")
         {
+            //TODO
             return _redisHelper.Get(key);
         }
 
