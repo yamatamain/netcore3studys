@@ -1,0 +1,22 @@
+﻿//指定使用pb3
+syntax = "proto3";
+
+option csharp_namespace = "Core3Study.GRpc";
+
+package First;
+
+// 定义服务
+service FirstTest {
+  // Sends a greeting
+  rpc GetCacheValue (Request) returns (Reply);
+}
+
+ 
+message Request {
+  string key = 1;
+}
+
+ 
+message Reply {
+  string value = 1;
+}
